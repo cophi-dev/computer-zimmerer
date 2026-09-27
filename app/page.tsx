@@ -36,17 +36,19 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <figure className="relative mx-auto w-full max-w-md lg:max-w-none">
-          <div aria-hidden="true" className="absolute -bottom-3 -right-3 top-8 left-8 border border-copper/80" />
-          <Image
-            src="/images/notebook-werkbank.jpg"
-            alt="Hände mit einem Schraubendreher an einem geöffneten Notebook auf einem dunklen Tisch"
-            width={1400}
-            height={1750}
-            priority
-            sizes="(min-width: 1024px) 42vw, 100vw"
-            className="relative z-10 h-auto w-full"
-          />
+        <figure className="mx-auto w-full max-w-xl lg:max-w-none">
+          <picture>
+            <source srcSet="/hero-illustration.webp" type="image/webp" />
+            <img
+              src="/hero-illustration.png"
+              alt="Illustration: Laptop, PC und Schraubendreher vor einem kupferfarbenen Kreis"
+              width={651}
+              height={520}
+              fetchPriority="high"
+              decoding="async"
+              className="h-auto w-full"
+            />
+          </picture>
         </figure>
       </section>
 
@@ -80,6 +82,16 @@ export default function Home() {
             <p className="mt-8 max-w-lg leading-7 text-ink-soft">
               Dazu gehören {serviceNames.join(", ").replace(/, ([^,]+)$/, " und $1")}.
             </p>
+            <figure className="mt-10 max-w-md">
+              <Image
+                src="/images/notebook-werkbank.jpg"
+                alt="Hände mit einem Schraubendreher an einem geöffneten Notebook auf einem dunklen Tisch"
+                width={1400}
+                height={1750}
+                sizes="(min-width: 1024px) 28rem, 100vw"
+                className="h-auto w-full"
+              />
+            </figure>
           </div>
         </div>
       </section>
