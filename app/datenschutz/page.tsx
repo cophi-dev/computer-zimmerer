@@ -10,7 +10,8 @@ export const metadata = pageMetadata({
 export default function Datenschutz() {
   return (
     <div className="mx-auto max-w-3xl px-5 py-16 sm:px-8 sm:py-20">
-      <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">Datenschutzerklärung</h1>
+      <h1 className="font-display text-4xl font-semibold tracking-tight sm:text-5xl">Datenschutzerklärung</h1>
+      <div className="mt-5 h-px w-16 bg-copper" aria-hidden="true" />
       <div className="prose-legal mt-6">
         <h2>1. Verantwortlicher</h2>
         <p>
@@ -39,10 +40,21 @@ export default function Datenschutz() {
           Ihre Daten, sobald Ihre Anfrage erledigt ist und keine gesetzlichen Aufbewahrungspflichten bestehen.
         </p>
 
-        <h2>4. Cookies und Tracking</h2>
-        <p>Diese Website setzt keine Cookies zu Analyse- oder Werbezwecken und verwendet keine Tracking-Tools.</p>
+        <h2>4. Bilder, Schriften und Karte</h2>
+        <p>
+          Die Fotos liegen auf unserem eigenen Server und werden von dort ausgeliefert. Es wird kein Bilderdienst
+          Dritter aufgerufen. Die Schriftarten werden ebenfalls von unserem Server ausgeliefert; beim Aufruf entsteht
+          keine Verbindung zu einem Schriftanbieter. Die Lagekarte ist eine Grafik auf der Seite selbst. Ein
+          Kartendienst wird nicht eingebunden.
+        </p>
 
-        <h2>5. Ihre Rechte</h2>
+        <h2>5. Cookies und Tracking</h2>
+        <p>
+          Diese Website setzt keine Cookies zu Analyse- oder Werbezwecken und verwendet keine Tracking-Tools. Es
+          werden keine externen Karten, Schrift- oder Bilddienste geladen.
+        </p>
+
+        <h2>6. Ihre Rechte</h2>
         <ul>
           <li>Auskunft über Ihre gespeicherten Daten (Art. 15 DSGVO)</li>
           <li>Berichtigung (Art. 16 DSGVO) und Löschung (Art. 17 DSGVO)</li>

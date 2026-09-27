@@ -7,8 +7,16 @@ type PageSeo = {
   path: string;
 };
 
+export const ogImage = {
+  url: "/og.jpg",
+  width: 1200,
+  height: 630,
+  alt: "Hände mit einem Schraubendreher an einem geöffneten Notebook",
+} as const;
+
 export function pageMetadata({ title, description, path }: PageSeo): Metadata {
   const url = new URL(path, site.url).toString();
+  const fullTitle = `${title} | ${site.name}`;
 
   return {
     title,
@@ -19,13 +27,15 @@ export function pageMetadata({ title, description, path }: PageSeo): Metadata {
       locale: "de_DE",
       url,
       siteName: site.name,
-      title: `${title} | ${site.name}`,
+      title: fullTitle,
       description,
+      images: [ogImage],
     },
     twitter: {
-      card: "summary",
-      title: `${title} | ${site.name}`,
+      card: "summary_large_image",
+      title: fullTitle,
       description,
+      images: [ogImage.url],
     },
   };
 }

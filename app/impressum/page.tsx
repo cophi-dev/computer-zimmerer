@@ -10,7 +10,8 @@ export const metadata = pageMetadata({
 export default function Impressum() {
   return (
     <div className="mx-auto max-w-3xl px-5 py-16 sm:px-8 sm:py-20">
-      <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">Impressum</h1>
+      <h1 className="font-display text-4xl font-semibold tracking-tight sm:text-5xl">Impressum</h1>
+      <div className="mt-5 h-px w-16 bg-copper" aria-hidden="true" />
       <div className="prose-legal mt-6">
         <h2>Angaben gemäß § 5 DDG</h2>
         <p>
