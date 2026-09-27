@@ -12,8 +12,8 @@ export default function Home() {
           Computer, Netzwerk und EDV — persönlich aus Hannesried.
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-8 text-ink-soft">
-          Bei Computer Zimmerer sprechen Sie direkt mit {site.owner}: Computer, Notebook, Handy, Netzwerke,
-          Internet und Software. Termine nach telefonischer Vereinbarung.
+          Computer Zimmerer ist der Computerbetrieb von {site.owner} in Hannesried — für Computer, Notebook,
+          Handy, Netzwerke, Internet und Software. Termine nach telefonischer Vereinbarung.
         </p>
         <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
           <a href={`tel:${site.phone}`} className="btn-primary text-base">
